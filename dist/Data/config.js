@@ -1,0 +1,1 @@
+global.constants={website:"http://www.baidu.com/",name:"\u767e\u5ea6",dragStartX:0};

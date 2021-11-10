@@ -1,0 +1,1 @@
+{"version":3,"sources":["FullscreenButton.css"],"names":[],"mappings":"AAAA,uCACE,aAAc,CACd,UAAW,CACX,WAAY,CACZ,QAAS,CACT,eACF","file":"FullscreenButton.css","sourcesContent":[".cesium-button.cesium-fullscreenButton {\n  display: block;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  border-radius: 0;\n}\n"]}

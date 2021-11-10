@@ -1,0 +1,14 @@
+/**
+  @license
+  when.js - https://github.com/cujojs/when
+
+  MIT License (c) copyright B Cavalier & J Hann
+
+ * A lightweight CommonJS Promises/A and when() implementation
+ * when is part of the cujo.js family of libraries (http://cujojs.com/)
+ *
+ * Licensed under the MIT License at:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * @version 1.7.1
+ */

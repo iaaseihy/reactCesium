@@ -1,0 +1,9 @@
+/*!
+ * Autolinker.js
+ * 3.11.0
+ *
+ * Copyright(c) 2019 Gregory Jacobs <greg@greg-jacobs.com>
+ * MIT License
+ *
+ * https://github.com/gregjacobs/Autolinker.js
+ */

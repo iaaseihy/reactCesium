@@ -1,0 +1,1 @@
+import barycentricCoordinates from"./barycentricCoordinates.js";import Cartesian3 from"./Cartesian3.js";var coords=new Cartesian3;function pointInsideTriangle(r,o,n,i){return barycentricCoordinates(r,o,n,i,coords),coords.x>0&&coords.y>0&&coords.z>0}export default pointInsideTriangle;

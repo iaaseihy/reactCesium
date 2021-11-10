@@ -1,0 +1,1 @@
+function defined(e){return void 0!==e&&null!==e}export default defined;
