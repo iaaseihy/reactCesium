@@ -5,6 +5,7 @@
 import cesiumViewerContactStyle from './index.module.less';
 /** 从react中获取React对象 和 Components组件 */
 import React, { Component } from 'react';
+import { Button } from 'antd';
 /** 导入cesium模块 */
 import * as Cesium from 'cesium/Cesium'
  
@@ -176,7 +177,8 @@ export default class cesiumViewerContact extends Component {
                {/* <div className={ map3DStyle.viewer } >
                  <div id="cesiumContainer" className={ map3DStyle.cesiumContainer } ></div>
                </div> */}
-            <div id="cesiumContainer" className={cesiumViewerContactStyle.cesiumContainer}>           
+            <div id="cesiumContainer" className={cesiumViewerContactStyle.cesiumContainer}>                
+            <Button type="primary">Primary</Button>       
             </div>
             <div id="cesiumContainerR" className={cesiumViewerContactStyle.cesiumContainerRight}>
                 <div id="creditContainerR" ></div>

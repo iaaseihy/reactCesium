@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+// 引入antdesign
+import 'antd/dist/antd.css';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/cesium/Source/Widgets/widgets.css'
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-undef */
 /* eslint-disable react/style-prop-object */
@@ -7,6 +8,7 @@ import splitDirection from './index.module.less';
 import React, { Component } from 'react';
 /** 导入cesium模块 */
 import * as Cesium from 'cesium/Cesium'
+import axios from 'axios'
 import '../../data/config'
 /** 使用react的Component组件对象自定义splitViewer组件 */
 export default class splitViewer extends Component {
@@ -113,7 +115,7 @@ export default class splitViewer extends Component {
   render() {   
     // 构建虚拟dom
     return (
-      <><div id="cesiumContainer" className={splitDirection.cesiumContainer}>     
+      <><div id="cesiumContainer" className={splitDirection.cesiumContainer}>    
             <div id="slider" className={splitDirection.slider}></div>
         <div id="creditContainer"></div>      
             </div>
