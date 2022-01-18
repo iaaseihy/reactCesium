@@ -1,0 +1,37 @@
+.bar{
+    position: absolute;
+    top: calc((100vh - 760px) / 2);
+    width: 600px;
+    background-color: rgba(8, 13, 42, 0.9);
+    right: 30%;
+    display: flex;
+    justify-content: space-between;
+    .itembox{
+        display: flex;
+        justify-content: space-between;
+        .item{
+            height: 40px;
+            padding: 0px 10px;
+            .ulpanel{
+                display: none;
+                position: absolute;
+                align-items: center;
+                justify-content: center;
+                left: -17px;
+                li{
+                    line-height: 20px;
+                    color: green;
+                    &.active{
+                        border-color: #079ACD;
+                    }
+                }
+                .licative{
+                    color: red;
+                }
+            }
+        }
+        .item:hover>.ulpanel{
+            display: block;
+        }
+    }
+}

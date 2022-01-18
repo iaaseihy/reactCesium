@@ -6,6 +6,7 @@ import cesiumViewerStyle from './index.module.less';
 import React, { Component } from 'react';
 /** 导入cesium模块 */
 import * as Cesium from 'cesium/Cesium'
+
  
 /** 使用react的Component组件对象自定义map3d组件 */
 export default class cesiumViewer extends Component {
@@ -156,7 +157,7 @@ export default class cesiumViewer extends Component {
                {/* <div className={ map3DStyle.viewer } >
                  <div id="cesiumContainer" className={ map3DStyle.cesiumContainer } ></div>
                </div> */}
-            <div id="cesiumContainer" className={cesiumViewerStyle.cesiumContainer}>           
+            <div id="cesiumContainer" className={cesiumViewerStyle.cesiumContainer}>        
             </div>
             <div id="cesiumContainerR" className={cesiumViewerStyle.cesiumContainerRight}>
                 <div id="creditContainerR" ></div>

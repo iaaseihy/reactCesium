@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import { Button } from 'antd';
 /** 导入cesium模块 */
 import * as Cesium from 'cesium/Cesium'
+import progressBar from '../progressBar/index'
  
 /** 使用react的Component组件对象自定义map3d组件 */
 export default class cesiumViewerContact extends Component {
@@ -178,7 +179,8 @@ export default class cesiumViewerContact extends Component {
                  <div id="cesiumContainer" className={ map3DStyle.cesiumContainer } ></div>
                </div> */}
             <div id="cesiumContainer" className={cesiumViewerContactStyle.cesiumContainer}>                
-            <Button type="primary">Primary</Button>       
+            <Button type="primary">Primary</Button>
+            {/* <progressBar/>        */}
             </div>
             <div id="cesiumContainerR" className={cesiumViewerContactStyle.cesiumContainerRight}>
                 <div id="creditContainerR" ></div>

@@ -11,6 +11,12 @@ import cesiumViewer from '../page/cesiumViewer/index'
 import cesiumViewerContact from '../page/cesiumViewerContact/index'
 // 卷帘页面
 import splitViewer from '../page/splitDirection/index'
+// 天气特效页面
+import weather from '../page/weather/index'
+// 进度条页面
+import progressBar from '../page/progressBar'
+// 点选页面
+import clickPanel from '../page/clickPanel'
 /** 导出router路由组件 */
 export default class Router extends Component {
 
@@ -70,9 +76,13 @@ export default class Router extends Component {
         {/**  <Switch>是唯一的因为它仅仅只会渲染一个路径。相比之下（不使用<Switch>包裹的情况下），每一个被location匹配到的<Route>将都会被渲染 */}
         <Switch>
           {/** 路由对象 指定组件路径 */}
-          {/* <Route path="/" component={ splitViewer } />
-          <Route path="/cesiumViewer" component={ cesiumViewer } /> */}
-          <Route path="/" component={ cesiumViewerContact } />         
+          {/* <Route path="/" component={ splitViewer } /> */}
+          {/* <Route path="/cesiumViewer" component={ cesiumViewer } /> */}
+          {/* <Route path="/" component={ cesiumViewerContact } />   */}
+          {/* <Route path="/" component={ weather } />    */}
+          {/* <Route path="/" component={ progressBar}/>   */}
+          <Route path="/" component={ clickPanel}/>
+              
         </Switch>
       </BrowserRouter>
     )

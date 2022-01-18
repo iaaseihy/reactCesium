@@ -1,0 +1,102 @@
+.bar{
+    position: absolute;
+    top: 30%;
+    width: 330px;
+    height: 100px;
+    background-color: rgba(8, 13, 42, 0.9);
+    right: 30%;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 2;
+    cursor: default;
+    .firstPanel{
+        width: 140px;
+        left: 2%;
+        top: 45%;
+    }
+    .firstDiv{
+        margin-right: 10px;
+    }
+    .third{
+        width: 15px;
+        height: 10px;
+        background-image: url('./img/liebiao.png');
+        background-size: 100% 100%;
+        cursor: pointer;
+    }
+    &.bgShow{
+        right: 92px;
+    }
+    &.bgHide{
+        right: -355px;
+    }
+    .hideBtn{
+        position: absolute;
+        height: 46px;
+        padding: 0px 5px;
+        bottom: 0px;
+        left: -10px;
+        background-image: url("./img/liebiao.png") no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        transform: rotate(180deg);
+    }
+    .text{
+        position: absolute;
+        width: 14px;
+        height: 100px;
+        cursor: pointer;
+        left: -29px;
+        bottom: 0px;
+        padding: 27px 12px 23px 27px;
+        font-size: 12px;
+        writing-mode: tb-rl;
+        background: url("./img/unfold.png") no-repeat center center;
+        transform: rotate(180deg);
+    }
+    .itembox{
+        display: flex;
+        justify-content: space-between;
+        .item{
+            height: 40px;
+            padding: 0px 10px;
+            .ulpanel{
+                display: none;
+                position: absolute;
+                align-items: center;
+                justify-content: center;
+                left: -17px;
+                li{
+                    line-height: 20px;
+                    border-color: #cd8e07;
+                    color: green;
+                    &.active{
+
+                    }
+                }
+                .liactive{
+                    border-color: #079ACD;
+                    color: red;
+                }
+            }
+        }
+        .item:hover>.ulpanel{
+            display: block;
+        }
+    }
+    .secondPanel{
+        width: 140px;
+        right: 2%;
+        top: 45%;
+    }
+    .firstLabel{
+        position: absolute;
+        left: 11.5%;
+        top: 10%;
+    }
+    .secondLabel{
+        position: absolute;
+        right: 15.5%;
+        top: 10%;
+    }
+}

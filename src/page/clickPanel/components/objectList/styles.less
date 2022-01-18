@@ -1,0 +1,87 @@
+.panel{
+    position: absolute;
+    top: 20.4%;
+    right: 4.7%;
+    width: 400px;
+    height: 450px;
+    overflow-y: hidden;
+    padding: 14px 10px;
+    background: rgb(8, 13, 42, 0.90);
+    border: 1px solid #3C5073;
+    &.hide{
+        display: none;
+    }
+    .panelTitle{
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 14px;
+    }
+    .wrapper{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        background: #3C5073;
+    .input{
+        height: 40px;
+        width: 328px;
+        padding-left: 20px;
+        color: white;
+        background: none !important;
+        outline: none !important;
+        border: none !important;
+        font-size: 14px;
+    }
+    .searchIcon{
+        font-family: "iconfont" !important;
+        font-size: 20px;
+        font-style: normal;
+        -webkit-font-smooth: antialiased;
+        }
+    }
+    .tablePanel{
+        top: 10%;
+        align-items: center;
+        margin-top: 5%;
+        height: 40px;
+        background: #3C5073;
+    }
+    :global{
+        .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+            background: #38546B !important;
+        }
+        .ant-table-thead > tr > th{
+            background: rgb(8, 13, 42,0.90) !important;
+            color: #fff;
+        }
+        .ant-tale-thead{
+            background: #3C5073 !important;
+        }
+        .ant-pagination{
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content:space-around;
+        }
+        .ant-pagination-item{
+            background-color: transparent;
+            color: #ffffff;
+            a{
+                color: #ffffff;
+            }
+        }
+        .ant-pagination-item-link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            color: #ffffff;
+            border: solid 1px #ffffff;
+        }
+
+        .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link{
+            background-color: transparent;
+            color: #ffffff;
+            border: solid 1px #ffffff;
+        }
+    }
+}
