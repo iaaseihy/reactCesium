@@ -109,6 +109,12 @@ export default class splitViewer extends Component {
     global.constants.dragStartX = 0;
     document.getElementById('slider').addEventListener('mousedown', this.mouseDown, false);
     window.addEventListener('mouseup', this.mouseUp, false);
+    // 获取当前缩放的地图层级
+    let level = 0;
+    if (viewer.scene.globe._surface._tilesToRender.length) {
+        level = viewer.scene.globe._surface._tilesToRender[0].level
+        console.log(level,"=======当前地图层级");
+    } 
     return viewer
   }
   /** 逻辑渲染 */
